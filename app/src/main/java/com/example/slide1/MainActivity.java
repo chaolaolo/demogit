@@ -61,5 +61,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnCat.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Cat_Activity.class);
+                startActivity(intent);
+                return false;
+            }
+
+        });
+
     }
 }
